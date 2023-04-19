@@ -65,7 +65,7 @@ body {
 
 #timer{
   margin: 40px;
-  font-size: 45pt;
+  font-size: 60pt;
   color: white;
 }
 
@@ -75,6 +75,7 @@ body {
   background-color: darkblue;
   color: white;
   font-size: xx-large;
+  width: 30%;
 }
 
 #start-btn:hover{
@@ -91,7 +92,7 @@ body {
   font-weight: bolder;
   font-size: 40pt;
   margin-bottom: 110px;
-  background-color: #eab676;
+  background-color: #d89e58;
   border-radius: 5px;
   padding: 15px;
 }
@@ -101,4 +102,6 @@ body {
   display: none;
   font-size: x-large;
   width: 45%;
+  background-color: darkblue;
+  color: white;
 }
