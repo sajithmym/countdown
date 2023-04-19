@@ -42,7 +42,7 @@ function App() {
         <h1 id='kl'> We are launching our magazine in </h1>
         <h2 id="timer">{count}</h2>
         <center>
-        <a id='j' href="https://heyzine.com/flip-book/4126aedaf9.html" target="_blank"> <button id='haire' className='btn btn-light'>Launch Now</button>link  </a>
+        <a href="https://heyzine.com/flip-book/4126aedaf9.html" target="_blank"> <button id='haire' className='btn btn-light'>Launch Now</button> </a>
         </center>
         <button id="start-btn" onClick={startCountdown}>Start</button>
       </div>
