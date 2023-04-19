@@ -27,7 +27,7 @@ function App() {
         const element3 = document.getElementById('kl');
         element3.style.display = 'none';
 
-        // document.querySelector("#timer").innerHTML = `<a id='j' href="https://heyzine.com/flip-book/4126aedaf9.html" target="_blank"> Launch  </a>`
+        // document.querySelector("#timer").innerHTML = ``
       } else {
         document.querySelector("#timer").innerHTML = `${i}`
         i--
@@ -41,7 +41,9 @@ function App() {
       <div className="container justify-content-center">
         <h1 id='kl'> We are launching our magazine in </h1>
         <h2 id="timer">{count}</h2>
-        <center><button id='haire' className='btn btn-light'>Launch Now</button></center>
+        <center>
+        <a id='j' href="https://heyzine.com/flip-book/4126aedaf9.html" target="_blank"> <button id='haire' className='btn btn-light'>Launch Now</button>link  </a>
+        </center>
         <button id="start-btn" onClick={startCountdown}>Start</button>
       </div>
     </div>
