@@ -6,11 +6,10 @@ function App() {
   var i = 9;
 
   const startCountdown = () => {
+    const element = document.getElementById('start-btn');
+    element.style.display = 'none';
     const intervalId = setInterval(() => {
       if (i === 9) {
-        const element = document.getElementById('start-btn');
-        element.style.display = 'none';
-
         const sec = document.getElementById('timer');
         sec.style.margin = '50px';
         sec.style.fontSize = "50pt"
@@ -37,12 +36,12 @@ function App() {
 
   return (
     <div className="App">
-    <center> <h3 id='head'>USWA MAGAZINE LAUNCH 2021</h3> </center>
+      <center> <h3 id='head'>USWA MAGAZINE LAUNCH 2021</h3> </center>
       <div className="container justify-content-center">
         <h1 id='kl'> We are launching our magazine in </h1>
         <h2 id="timer">{count}</h2>
         <center>
-        <a href="https://heyzine.com/flip-book/4126aedaf9.html" target="_blank"> <button id='haire' className='btn btn-light'>Launch Now</button> </a>
+          <a href="https://heyzine.com/flip-book/4126aedaf9.html" target="_blank"> <button id='haire' className='btn btn-light'>Launch Now</button> </a>
         </center>
         <button id="start-btn" onClick={startCountdown}>Start</button>
       </div>
