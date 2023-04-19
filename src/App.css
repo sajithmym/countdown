@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+body {
+  background-image: url('https://user-images.githubusercontent.com/84276601/232982246-7e3f0f06-5206-4d6f-9f18-20fec7541154.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -42,19 +50,20 @@
 }
 
 .container{
-  background-color: lightblue;
   border-radius: 5px;
   padding: 30px;
 }
 
-h1{
+#kl{
   font-size: x-large;
-  font-weight: bolder;
+  /* font-weight: bolder; */
+  color: white;
 }
 
 #timer{
   margin: 40px;
   font-size: 45pt;
+  color: white;
 }
 
 #start-btn{
@@ -62,7 +71,7 @@ h1{
   padding: 5px;
   background-color: darkblue;
   color: white;
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 #start-btn:hover{
@@ -72,4 +81,17 @@ h1{
 #j{
   color: darkblue;
   font-weight: bolder;
+}
+
+#head{
+  color: purple;
+  font-weight: bolder;
+  font-size: xx-large;
+  margin-bottom: 70px;
+}
+
+#haire{
+  margin-top: 150px;
+  display: none;
+  font-size: x-large;
 }

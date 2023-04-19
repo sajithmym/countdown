@@ -10,10 +10,24 @@ function App() {
       if (i === 9) {
         const element = document.getElementById('start-btn');
         element.style.display = 'none';
+
+        const sec = document.getElementById('timer');
+        sec.style.margin = '50px';
+        sec.style.fontSize = "50pt"
       }
 
       if (i === 0) {
-        document.querySelector("#timer").innerHTML = `<a id='j' href="https://heyzine.com/flip-book/4126aedaf9.html" target="_blank"> Launch </a>`
+        // 
+        const element = document.getElementById('timer');
+        element.style.display = 'none';
+
+        const element2 = document.getElementById('haire');
+        element2.style.display = 'block';
+
+        const element3 = document.getElementById('kl');
+        element3.style.display = 'none';
+
+        // document.querySelector("#timer").innerHTML = `<a id='j' href="https://heyzine.com/flip-book/4126aedaf9.html" target="_blank"> Launch  </a>`
       } else {
         document.querySelector("#timer").innerHTML = `${i}`
         i--
@@ -23,9 +37,11 @@ function App() {
 
   return (
     <div className="App">
+    <center> <h3 id='head'>USWA MAGAZINE LAUNCH 2021</h3> </center>
       <div className="container justify-content-center">
-        <h1> We are launching our magazine in </h1>
+        <h1 id='kl'> We are launching our magazine in </h1>
         <h2 id="timer">{count}</h2>
+        <center><button id='haire' className='btn btn-light'>Launch Now</button></center>
         <button id="start-btn" onClick={startCountdown}>Start</button>
       </div>
     </div>
